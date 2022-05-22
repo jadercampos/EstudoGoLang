@@ -44,16 +44,9 @@ func main() {
 
 	fmt.Println(contaDoJoao)
 
-	contaDaDri := ContaCorrente{"Adriana", 123, 654, 45.45}
 	contaDaDri2 := ContaCorrente{"Adriana", 123, 654, 45.45}
-	fmt.Println(contaDaDri == contaDaDri2)
-
-	var contaDoJoao *ContaCorrente
-	contaDoJoao = new(ContaCorrente)
-	contaDoJoao.titular = "João"
-	contaDoJoao.numeroAgencia = 528
-	contaDoJoao.numeroConta = 785421
-	contaDoJoao.saldo = 500
+	contaDaDri3 := ContaCorrente{"Adriana", 123, 654, 45.45}
+	fmt.Println(contaDaDri2 == contaDaDri3)
 
 	var contaDoJoao2 *ContaCorrente
 	contaDoJoao2 = new(ContaCorrente)
@@ -62,9 +55,16 @@ func main() {
 	contaDoJoao2.numeroConta = 785421
 	contaDoJoao2.saldo = 500
 
-	fmt.Println(contaDoJoao == contaDoJoao2)
-	fmt.Println(contaDoJoao)
+	var contaDoJoao3 *ContaCorrente
+	contaDoJoao3 = new(ContaCorrente)
+	contaDoJoao3.titular = "João"
+	contaDoJoao3.numeroAgencia = 528
+	contaDoJoao3.numeroConta = 785421
+	contaDoJoao3.saldo = 500
+
+	fmt.Println(contaDoJoao2 == contaDoJoao3)
 	fmt.Println(contaDoJoao2)
-	fmt.Println(&contaDoJoao)
+	fmt.Println(contaDoJoao3)
 	fmt.Println(&contaDoJoao2)
+	fmt.Println(&contaDoJoao3)
 }
